@@ -1,0 +1,12 @@
+cluster.name: <%=@cluster_name%>
+cluster.routing.allocation.cluster_concurrent_rebalance: <%=@concurrent_rebalance%>
+node.name: <%=@node_name%>
+path.data: <%=@data_path%>
+path.logs: <%=@log_path%>
+discovery.zen.minimum_master_nodes: <%=@min_master%>
+discovery.type: ec2
+discovery.ec2.groups: <%=@security_group%>
+cloud.aws.region: <%=@region%>
+index.number_of_shards: <%=@shard_number%>
+action.disable_delete_all_indices: <%=@disable_delete%>
+

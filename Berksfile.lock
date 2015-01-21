@@ -1,0 +1,14 @@
+DEPENDENCIES
+  gbg_elasticsearch
+    path: .
+    metadata: true
+  gbg_yum_repo
+    git: https://github.com/genebygene/chef-repo.git
+    revision: 10608cbca88b55c149daa82e2b6f6d6ced5d293d
+    branch: elasticsearch
+    rel: gbg_yum_repo
+
+GRAPH
+  gbg_elasticsearch (0.1.11)
+    gbg_yum_repo (>= 0.0.0)
+  gbg_yum_repo (0.1.7)
